@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="9" author="clauribi">
+        <sqlFile path="scripts/01_create_table_patients.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet id="14" author="clauribi">
+        <sqlFile path="scripts/03_create_table_doctors.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet id="15" author="clauribi">
+        <sqlFile path="scripts/04_create_table_appointments.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet id="17" author="clauribi">
+        <sqlFile path="scripts/02_create_table_nurses.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet id="18" author="clauribi">
+        <sqlFile path="scripts/05_alter_nurses_time.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet id="19" author="clauribi">
+        <sqlFile path="scripts/06_alter_doctors_time.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet id="22" author="clauribi">
+        <sqlFile path="scripts/07_alter_appointments_drop_fk.sql" relativeToChangelogFile="true" splitStatements="true" encoding="UTF-8"/>
+    </changeSet>
+
+
+
+
+
+
+
+
+
+</databaseChangeLog>
+
+
